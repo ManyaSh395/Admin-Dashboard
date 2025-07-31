@@ -10,7 +10,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 190px 1fr;
-    grid-template-rows: 110px 1fr;
+    grid-template-rows: 130px 1fr;
     height: 100vh;
     grid-gap: 0;
 }
@@ -81,8 +81,108 @@ nav1, nav2 {
   background-color: white;
 }
 
+.top-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
 .main-content {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     background-color: #e2e8f0;
+}
+
+.search > label > svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    margin-right: 16px;
+} 
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.search > input {
+    width: 600px;
+    height: 18px;
+    padding: 5px;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 12px;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+.notif-bell,
+.github-profile {
+    width: 24px;
+    height: 24px;
+}
+
+.github-profile:hover {
+    width: 28px;
+    height: 28px;
+}
+
+.name {
+    font-weight:600;
+    margin-right: 50px;
+}
+
+.bottom-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.account-greeting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.account-greeting > img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-left: 35px;
+    margin-right: 18px;
+}
+
+.btn {
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 22px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.share {
+    margin-right: 70px;
+}
+
+.hi-there {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-name {
+    font-size: 22px;
+    font-weight: 600;
 }
